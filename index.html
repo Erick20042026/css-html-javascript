@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Nairobi youth coding bootcamp</title>
+</head>
+<body>
+
+    <h1>Bootcamp Application Form</h1>
+    <p>Application form-January 2027 inakes.</p>
+
+
+    <form action="#" method="post">
+
+        <!-- 1. Personal Details -->
+        <fieldset>
+            <legend>1. Personal Details</legend>
+
+            <label for="fname">First name *</label><br>
+            <input type="text" id="fname" name="firstname"e.g. Erick" placeholder= required minlength="2" maxlength="30"><br><br>
+            <label for="lname">Last name *</label><br>
+            <input type="text" id="lname" name="lastname" placeholder="e.g.muhia" required minlength="2" maxlength="30"><br><br>
+
+            <label for="dob">Date of birth *</label><br>
+            <input type="date" id="dob" name="dob" required><br><br>
+
+            <label>Gender:</label>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+            <input type="radio" id="prefer" name="gender" value="prefer_not">
+            <label for="prefer">Prefer not to say</label><br><br>
+
+            <label for="idnum">National ID number</label><br>
+            <input type="text" id="idnum" name="idnumber" placeholder=""><br>
+
+        </fieldset>
+
+        <br>
+
+        <!-- 2. Contact Information -->
+        <fieldset>
+            <legend>2. Contact Information</legend>
+
+            <label for="email">Email *</label><br>
+            <input type="email" id="email" name="email" placeholder="you@example.com" required><br><br>
+
+            <label for="phone">Phone number</label><br>
+            <input type="tel" id="phone" name="phone" placeholder="07XX XXX XXX"><br><br>
+
+            <label for="county">County</label><br>
+            <input list="counties" id="county" name="county" placeholder="">
+            <datalist id="counties">
+                <option value="Nairobi"></option>
+                <option value="Mombasa"></option>
+                <option value="Kisumu"></option>
+                <option value="Nakuru"></option>
+            </datalist><br><br>
+
+            <label for="portfolio">Portfolio / website</label><br>
+            <input type="url" id="portfolio" name="portfolio" placeholder="https://"><br>
+
+        </fieldset>
+
+        <br>
+
+        <!-- 3. Course Choice -->
+        <fieldset>
+            <legend>3. Course Choice</legend>
+
+            <label for="course">Preferred Course</label><br>
+            <select id="course" name="course">
+                <optgroup label="Web Development">
+                    <option value="frontend">Software Engineering</option>
+                    <option value="backend">Data Science</option>
+                    <option value="fullstack">Full Stack</option>
+                </optgroup>
+                <optgroup label="software & engineering">
+                    <option value="data">group3 html</option>
+                    <option value="ai">English</option>
+                </optgroup>
+            </select><br><br>
+
+            <label for="month">Intake Month</label><br>
+            <input type="month" id="month" name="month"><br><br>
+
+            <label for="time">Preferred Class Time</label><br>
+            <input type="time" id="time" name="time"><br><br>
+
+            <label for="exp">Programming Experience (years)</label><br>
+            <input type="number" id="exp" name="experience" min="0" max="20" value="0"><br><br>
+
+            <label for="level">Skill Level</label><br>
+            <input type="range" id="level" name="level" min="0" max="10"><br><br>
+
+            <label for="color">Favorite IDE Color Theme</label><br>
+            <input type="color" id="color" name="yellow" value="#0066cc"><br><br>
+
+
+        </fieldset>
+
+        <br>
+
+        <!-- 4. Additional Info - To cover remaining required types -->
+        <fieldset>
+            <legend>4. Additional Information</legend>
+
+            <label for="password">Create Password *</label><br>
+            <input type="password" id="password" name="password" required minlength="6"><br><br>
+
+            <label for="cv">Upload CV</label><br>
+            <input type="file" id="cv" name="cv" accept=".pdf,.docx"><br><br>
+
+            <input type="checkbox" id="terms" name="terms" required checked>
+            <label for="terms"><strong>I agree to the terms</strong></label><br><br>
+
+            <label for="bio">Tell us about yourself</label><br>
+            <textarea id="bio" name="bio" rows="4" cols="40" placeholder="Why do you want to join?" maxlength="300"></textarea><br>
+            <small>Max 300 characters</small><br><br>
+
+            <label for="refcode">Referral Code</label><br>
+            <input type="text" id="refcode" name="refcode" value="BOOTCAMP2026" readonly><br><br>
+
+            <label for="promo">Promo Code (disabled)</label><br>
+            <input type="text" id="promo" name="promo" value="DISCOUNT" disabled><br><br>
+
+            <input type="hidden" name="formtype" value="bootcamp_application">
+
+        </fieldset>
+
+        <br>
+        <hr>
+        <p><small>Application submitted on <time datetime="2026-05-13">May 13, 2026</time></small></p>
+
+        <button type="submit">Submit Application</button>
+        <button type="reset">Reset</button>
+        <input type="button" value="Need Help?" onclick="alert('Email admin@bootcamp.com')">
+
+        <p><small>Questions? <a href="mailto:support@bootcamp.com">support@bootcamp.com</a>  <a href="#">Privacy Policy</a></small></p>
+    
+
+    </form>
+
+</body>
+</html>
